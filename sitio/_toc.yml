@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+- caption: Cuadernos
+  chapters:
+  - file: cuadernos/AccediendoModelosCMIP6.ipynb
+  - file: markdown-notebooks
+    title: Cuaderno ilustrativo
+  - file: notebooks
+- caption: Recursos
+  chapters:
+  - file: jupyter_y_python
+  - file: markdown
