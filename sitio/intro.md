@@ -1,11 +1,13 @@
-# Welcome to your Jupyter Book
+# OceanHackWeek en Español
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more.
+Este sitio está desarrollado utilizando la aplicación [Jupyter Book](https://jupyterbook.org).
 
 ```{tableofcontents}
 ```
+
+Fuente de cuadernos de Denisse:
+
+- https://github.com/lidefi87/CMIP6_Python_SEE (Python, en español)
+- https://github.com/datatas/Accessing_Mapping_GBIFdata (R, en inglés)
+
+La imagen del logo es temporal, en honor a Ángel. La tomé de [este sitio](https://www.geografiainfinita.com/2020/12/los-mapas-invertidos-el-mundo-al-reves/)

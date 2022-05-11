@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: OHW Español
+author: El grupo de OHW Español
+logo: imagenes/Joaquín_Torres_García_-_América_Invertida.jpg
 description: >-
   Ciencias de datos marinos en español. Asociado a OceanHackWeek
 
@@ -12,14 +12,8 @@ description: >-
 execute:
   execute_notebooks: 'off'
 
-# Define the name of the latex output file for PDF builds
-latex:
-  latex_documents:
-    targetname: book.tex
-
-# Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
+# General execution settings
+only_build_toc_files: true
 
 # Information about where the book exists on the web
 repository:
@@ -30,14 +24,24 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  #baseurl: https://emiliom.github.io/nica-ecocomputacion/
+  #favicon: imagenes/favicon1.ico
+  #home_page_in_navbar: false
+  #extra_navbar: ""
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
 
-# General execution settings
-only_build_toc_files: true
-
 sphinx:
   config:
     language: es
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
 
