@@ -3,7 +3,7 @@
 
 title: OHW Español
 author: El grupo de OHW Español
-logo: imagenes/Joaquín_Torres_García_-_América_Invertida.jpg
+logo: imagenes/OHWe.png
 description: >-
   Ciencias de datos marinos en español. Asociado a OceanHackWeek
 
@@ -26,7 +26,7 @@ repository:
 html:
   #baseurl: https://emiliom.github.io/nica-ecocomputacion/
   #favicon: imagenes/favicon1.ico
-  #home_page_in_navbar: false
+  home_page_in_navbar: false
   #extra_navbar: ""
   use_issues_button: true
   use_repository_button: true
@@ -35,6 +35,7 @@ html:
 sphinx:
   config:
     language: es
+    html_static_path: ['_static']
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -42,6 +43,6 @@ latex:
     targetname: book.tex
 
 # Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
+# bibtex_bibfiles:
+#   - references.bib
 

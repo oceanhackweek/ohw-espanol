@@ -1,21 +1,21 @@
-name: ohw-espanol
+name: ohw-espanol-web
 channels:
   - conda-forge
   - default
 dependencies:
   - python=3.9
 # Installing from conda package led to docutils error during jb build
-# - jupyter-book
+  - jupyter-book
   - ipykernel
   - ghp-import
   - pandas
-  - geopandas
-  - xarray
+  # - geopandas
+  # - xarray
   - matplotlib
 # - seaborn
 # - folium
-  - cartopy
+  # - cartopy
   - pip
-  - pip:
-    - jupyter-book
+  # - pip:
+  #   - jupyter-book
 

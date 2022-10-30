@@ -2,16 +2,29 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: ic/aulainv/index
 
 parts:
-- caption: Cuadernos
+- caption: Tutoriales de Introducción
   chapters:
-  - file: cuadernos/AccediendoModelosCMIP6.ipynb
-  - file: markdown-notebooks
-    title: Cuaderno ilustrativo
-  - file: notebooks
+  # maxdepth: 2  # The displayed Table of Contents will only have two levels
+  - file: ic/aulainv/R/R.md
+    title: R
+    sections:
+    - file: ic/aulainv/R/IntroduccionaR.md
+  - file: ic/aulainv/python/Python.md
+    title: Python
+    sections:
+    - file: ic/aulainv/python/intro_to_python_ohw2022.ipynb
+    - file: ic/aulainv/python/intro_to_netcdf.ipynb
+    - file: ic/aulainv/python/read_tabulardata.ipynb
+    - file: ic/aulainv/python/Intro_to_plot.ipynb
+  - file: ic/aulainv/github/Github.md
+    title: Git y GitHub
+  - file: ic/aulainv/jupyter/Jupyter.md
+    title: Jupyter
+    sections:
+    - file: ic/aulainv/jupyter/Introducing_Jupyter_Notebooks.ipynb
 - caption: Recursos
   chapters:
   - file: jupyter_y_python
-  - file: markdown
