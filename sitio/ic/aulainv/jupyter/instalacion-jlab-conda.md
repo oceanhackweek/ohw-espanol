@@ -24,8 +24,6 @@ En la página https://docs.conda.io/en/latest/miniconda.html, bajo "Latest Minic
 
 Cuando la instalación ha concluído, abre el "Anaconda Powershell Prompt" desde el menú de Start. Puedes comprobar que funciona bien corriendo el comando `conda list`.
 
-**TODO: Recomendacion de enlace para aprender mas sobre uso de la terminal.**
-
 ### macOS o Linux
 
 En la terminal (bash):
@@ -40,7 +38,7 @@ wget $url -O miniconda.sh
 bash miniconda.sh -b -p $HOME/miniconda3
 ```
 
-El instalador te preguntará si quieres que inicialize Miniconda3 corriendo `conda init` ("Do you wish the installer to initialize Miniconda3 by running conda init?"). Selecciona "yes". Por último, corre el comando `conda update conda --yes`.
+Si el instalador te pregunta si quieres que inicialize Miniconda3 corriendo `conda init` ("Do you wish the installer to initialize Miniconda3 by running conda init?"), selecciona "yes". Si no, corre el siguiente comando: `./miniconda3/bin/conda init`. Por último, corre el comando `conda update conda --yes`
 
 ## Crear entorno conda para JupyterLab
 

@@ -29,29 +29,31 @@ Ahora lanzamos la aplicación con este comando:
 jupyter lab
 ```
 
-`JupyterLab` se abrirá automáticamente en tu navegador de defecto. Si no es así, o si deseas utilizar un navegador diferente, abre este enlace: http://localhost:8888/lab
-
-TODO: ADD
-- Screenshot de terminal?
-- Screenshot de JupyterLab, sin nada, mostrando el url
+`JupyterLab` se abrirá automáticamente en tu navegador de defecto. Si no es así, o si deseas utilizar un navegador diferente, abre este enlace local: http://localhost:8888/lab
 
 ## Interfaz de JupyterLab
 
 ### Cambiar el interfaz al español
 
-El entorno que creamos permite cambiar el interfaz de JupyterLab al español. Para hacer este cambio, en el menú de `Settings` selecciona el submenú `Language`, y ahí selecciona ESPAÑOL:
+El entorno que creamos permite cambiar el interfaz de JupyterLab al español. Para hacer este cambio, en el menú de `Settings` selecciona el submenú `Language`, y ahí selecciona Español:
 
-IMAGEN
+![Cambiar idioma a español](imagenes/JupyterLab-CambiarIdiomaAEspanol.png)
 
-Recibirás una ventana de confirmación del cambio. Al confirmarlo presionando `Ok`, el navegador se refrescará y verás el interfaz traducido al español.
+Se abrirá una ventana de confirmación del cambio:
+
+![Confirmar cambio de idioma](imagenes/JupyterLab-CambiarIdioma-Confirmar.png)
+
+Al confirmarlo presionando `Change and reload`, el navegador se refrescará y verás el interfaz traducido al español.
 
 ### Tour del interfaz
 
-- Areas principales del interfaz
-- Menus, tool bar
-- Navegador, nucleos activos, etc, tabla de contenido
-- Lanzador de entornos / nucleos
-- Terminal
+Aunque JupyterLab tiene muchas características de un Entorno de Desarrollo Integrado (*IDE*) tradicional, su enfoque es en proveer una experiencia computacional interactiva y exploratoria.
+
+![Interfaz de entrada, JupyterLab](imagenes/JupyterLab-Nuevo-Enblanco.png)
+
+El interfaz de JupyterLab consiste de un **área principal de trabajo** que contiene pestañas (*tabs*) de documentos y herramientas, una **barra lateral izquierda**, y una **barra de menú**. La barra lateral izquierda contiene el **navegador de archivos**, la lista de **núcleos (*kernels*), terminales y pestañas (*tabs*) activas**, la **tabla de contenido** para el documento activo, y el **administrador de extensiones**. En el área de trabajo pueden existir varios documentos o componentes abiertos en diferentes pestañas. Estos pueden incluir cuadernos, consolas de Python (similar a una terminal), terminales, y documentos de multimedia. El **lanzador** permite lanzar cuadernos nuevos (seleccionando el núcleo deseado), consolas, terminales, y otros tipos de archivos o herramientas. El menú `Ver > Activar paleta de comandos` da acceso a la **paleta de comandos**.
+
+La documentación de JupyterLab contiene [más detalles sobre el interfaz](https://jupyterlab.readthedocs.io/en/stable/user/interface.html), en inglés.
 
 ## Cuadernos (*notebooks*) Jupyter
 
