@@ -34,6 +34,8 @@ parts:
       - file: ic/aulainv/jupyter/Jupyter.md
         title: Jupyter
         sections:
+        - file: ic/aulainv/jupyter/jupyter-tutorial.md
+        - file: ic/aulainv/jupyter/instalacion-jlab-conda.md
         - file: ic/aulainv/jupyter/Introducing_Jupyter_Notebooks.ipynb
     - file: ic/aulainv/enlaces
   - file: ic/hackweek
