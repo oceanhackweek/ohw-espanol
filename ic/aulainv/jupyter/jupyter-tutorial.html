@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introducción a Github &#8212; OHW Español</title>
+    <title>Curso de introducción a Jupyter para principiantes &#8212; OHW Español</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Introducción a Jupyter" href="../jupyter/Jupyter.html" />
-    <link rel="prev" title="Visualizar datos en Python" href="../python/Intro_to_plot.html" />
+    <link rel="next" title="Instalación de JupyterLab y Conda" href="instalacion-jlab-conda.html" />
+    <link rel="prev" title="Introducción a Jupyter" href="Jupyter.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="es">
     
@@ -186,33 +186,33 @@ const thebe_selector_output = ".output, .cell_output"
        </li>
       </ul>
      </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../github/Github.html">
        Git y GitHub
       </a>
      </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="../jupyter/Jupyter.html">
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="Jupyter.html">
        Jupyter
       </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
       <label for="toctree-checkbox-5">
        <i class="fas fa-chevron-down">
        </i>
       </label>
-      <ul>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../jupyter/jupyter-tutorial.html">
+      <ul class="current">
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
          Curso de introducción a Jupyter para principiantes
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../jupyter/instalacion-jlab-conda.html">
+        <a class="reference internal" href="instalacion-jlab-conda.html">
          Instalación de JupyterLab y Conda
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../jupyter/Introducing_Jupyter_Notebooks.html">
+        <a class="reference internal" href="Introducing_Jupyter_Notebooks.html">
          Cuadernos Jupyter
         </a>
        </li>
@@ -346,7 +346,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/oceanhackweek/ohw-espanol/issues/new?title=Issue%20on%20page%20%2Fic/aulainv/github/Github.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/oceanhackweek/ohw-espanol/issues/new?title=Issue%20on%20page%20%2Fic/aulainv/jupyter/jupyter-tutorial.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -363,7 +363,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/oceanhackweek/ohw-espanol/edit/main/sitio/ic/aulainv/github/Github.md"
+        <a href="https://github.com/oceanhackweek/ohw-espanol/edit/main/sitio/ic/aulainv/jupyter/jupyter-tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -391,7 +391,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../../_sources/ic/aulainv/github/Github.md"
+        <a href="../../../_sources/ic/aulainv/jupyter/jupyter-tutorial.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -428,23 +428,180 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-es-jupyter">
+   ¿Qué es Jupyter?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyterlab-instalacion-y-lanzamiento">
+   JupyterLab: Instalación y lanzamiento
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instalar-jupyterlab">
+     Instalar JupyterLab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lanzar-jupyterlab">
+     Lanzar JupyterLab
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interfaz-de-jupyterlab">
+   Interfaz de JupyterLab
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cambiar-el-interfaz-al-espanol">
+     Cambiar el interfaz al español
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tour-del-interfaz">
+     Tour del interfaz
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuadernos-notebooks-jupyter">
+   Cuadernos (
+   <em>
+    notebooks
+   </em>
+   ) Jupyter
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#abre-un-jupyter-notebook">
+     Abre un Jupyter Notebook
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#otros-apuntes-de-esta-seccion">
+     otros apuntes de esta seccion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introducción a Github</h1>
+                <h1>Curso de introducción a Jupyter para principiantes</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#que-es-jupyter">
+   ¿Qué es Jupyter?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyterlab-instalacion-y-lanzamiento">
+   JupyterLab: Instalación y lanzamiento
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instalar-jupyterlab">
+     Instalar JupyterLab
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lanzar-jupyterlab">
+     Lanzar JupyterLab
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interfaz-de-jupyterlab">
+   Interfaz de JupyterLab
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cambiar-el-interfaz-al-espanol">
+     Cambiar el interfaz al español
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tour-del-interfaz">
+     Tour del interfaz
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cuadernos-notebooks-jupyter">
+   Cuadernos (
+   <em>
+    notebooks
+   </em>
+   ) Jupyter
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#abre-un-jupyter-notebook">
+     Abre un Jupyter Notebook
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#otros-apuntes-de-esta-seccion">
+     otros apuntes de esta seccion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -452,10 +609,74 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-github">
-<h1>Introducción a Github<a class="headerlink" href="#introduccion-a-github" title="Enlazar permanentemente con este título">#</a></h1>
-<p><strong>Autora</strong>: Denisse Fierro Arcos</p>
-<p>Tutorial de iniciación a Github, en español</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="curso-de-introduccion-a-jupyter-para-principiantes">
+<h1>Curso de introducción a Jupyter para principiantes<a class="headerlink" href="#curso-de-introduccion-a-jupyter-para-principiantes" title="Enlazar permanentemente con este título">#</a></h1>
+<section id="que-es-jupyter">
+<h2>¿Qué es Jupyter?<a class="headerlink" href="#que-es-jupyter" title="Enlazar permanentemente con este título">#</a></h2>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/Proyecto_Jupyter">Jupyter</a> es un ecosistema abierto (<em>open source</em>) de computación desarrollado por el <a class="reference external" href="https://jupyter.org/">Proyecto Jupyter</a> que incluye herramientas para el desarrollo, intercambio y presentación interactiva de código y proyectos de análisis de datos, con apoyo para una gran cantidad de lenguajes de programación (su nombre se deriva de los lenguajes de código abierto Julia, Python y R).</p>
+<p>El ecosistema del Proyecto Jupyter está <a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/why-we-use-jupyter-notebooks.html#but-first-what-is-jupyter-notebook">compuesto de tres elementos</a>: una colección de estándares, una comunidad y una serie de herramientas de software. <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> es una aplicación para crear, manejar y correr cuadernos (<em>notebooks</em>) Jupyter. Un <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/latest/">cuaderno Jupyter</a> es un documento que permite mezclar código ejecutable, ecuaciones, visualizaciones y texto narrativo formateado. Un cuaderno puede combinar en un sólo documento el código, los datos que utiliza y sus resultados, incluyendo explicaciones, gráficas y contenido multimedia, de tal modo que pueda ser compartido ampliamente y corrido por otros con relativa facilidad. El cuaderno permite la creación de narrativas computacionales interactivas y reproducibles.</p>
+<p>El ecosistema Jupyter utiliza tecnología web que permite correr las apliaciones en un navegador (<em>browser</em>) con las computaciones ya sea en tu propia computadora («local») o a través de servicios o servidores remotos. Los cuadernos Jupyter y el ecosistema Jupyter hoy en día gozan de una gran popularidad en aplicaciones de ciencias de datos y aplicaciones científicas en general, especialmente con el lenguaje Python.</p>
+</section>
+<section id="jupyterlab-instalacion-y-lanzamiento">
+<h2>JupyterLab: Instalación y lanzamiento<a class="headerlink" href="#jupyterlab-instalacion-y-lanzamiento" title="Enlazar permanentemente con este título">#</a></h2>
+<section id="instalar-jupyterlab">
+<h3>Instalar JupyterLab<a class="headerlink" href="#instalar-jupyterlab" title="Enlazar permanentemente con este título">#</a></h3>
+<p>Instalaremos la aplicación <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> en tu computadora, utilizando el sistema <code class="docutils literal notranslate"><span class="pre">conda</span></code>. Encontrarás instrucciones detalladas en <a class="reference internal" href="instalacion-jlab-conda.html"><span class="doc std std-doc">nuestra página de instalación de JupyterLab y conda.</span></a></p>
+</section>
+<section id="lanzar-jupyterlab">
+<h3>Lanzar JupyterLab<a class="headerlink" href="#lanzar-jupyterlab" title="Enlazar permanentemente con este título">#</a></h3>
+<p>La aplicación <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> es lanzada desde la <strong>terminal</strong> (<em>shell</em>). En la terminal, primero cambia de carpeta hacia tu carpeta de inicio (<em>home folder</em>), o la carpeta que contiene los archivos que quieras utilizar. Luego activa el entorno «jupyterlab» recién creado (este ejemplo es en Windows):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">MIPERFIL</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">jupyterlab</span>
+</pre></div>
+</div>
+<p>Ahora lanzamos la aplicación con este comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter lab
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> se abrirá automáticamente en tu navegador de defecto. Si no es así, o si deseas utilizar un navegador diferente, abre este enlace: <a class="reference external" href="http://localhost:8888/lab">http://localhost:8888/lab</a></p>
+<p>TODO: ADD</p>
+<ul class="simple">
+<li><p>Screenshot de terminal?</p></li>
+<li><p>Screenshot de JupyterLab, sin nada, mostrando el url</p></li>
+</ul>
+</section>
+</section>
+<section id="interfaz-de-jupyterlab">
+<h2>Interfaz de JupyterLab<a class="headerlink" href="#interfaz-de-jupyterlab" title="Enlazar permanentemente con este título">#</a></h2>
+<section id="cambiar-el-interfaz-al-espanol">
+<h3>Cambiar el interfaz al español<a class="headerlink" href="#cambiar-el-interfaz-al-espanol" title="Enlazar permanentemente con este título">#</a></h3>
+<p>El entorno que creamos permite cambiar el interfaz de JupyterLab al español. Para hacer este cambio, en el menú de <code class="docutils literal notranslate"><span class="pre">Settings</span></code> selecciona el submenú <code class="docutils literal notranslate"><span class="pre">Language</span></code>, y ahí selecciona ESPAÑOL:</p>
+<p>IMAGEN</p>
+<p>Recibirás una ventana de confirmación del cambio. Al confirmarlo presionando <code class="docutils literal notranslate"><span class="pre">Ok</span></code>, el navegador se refrescará y verás el interfaz traducido al español.</p>
+</section>
+<section id="tour-del-interfaz">
+<h3>Tour del interfaz<a class="headerlink" href="#tour-del-interfaz" title="Enlazar permanentemente con este título">#</a></h3>
+<ul class="simple">
+<li><p>Areas principales del interfaz</p></li>
+<li><p>Menus, tool bar</p></li>
+<li><p>Navegador, nucleos activos, etc, tabla de contenido</p></li>
+<li><p>Lanzador de entornos / nucleos</p></li>
+<li><p>Terminal</p></li>
+</ul>
+</section>
+</section>
+<section id="cuadernos-notebooks-jupyter">
+<h2>Cuadernos (<em>notebooks</em>) Jupyter<a class="headerlink" href="#cuadernos-notebooks-jupyter" title="Enlazar permanentemente con este título">#</a></h2>
+<section id="abre-un-jupyter-notebook">
+<h3>Abre un Jupyter Notebook<a class="headerlink" href="#abre-un-jupyter-notebook" title="Enlazar permanentemente con este título">#</a></h3>
+<p>Para una breve introducción a <strong>Jupyter Notebooks</strong>, consulta nuestra página <a class="reference external" href="https://datacarpentry.org/python-ecology-lesson-es/jupyter_notebooks/index.html">“Introducción a Jupyter Notebooks”</a>.</p>
+</section>
+<section id="otros-apuntes-de-esta-seccion">
+<h3>otros apuntes de esta seccion<a class="headerlink" href="#otros-apuntes-de-esta-seccion" title="Enlazar permanentemente con este título">#</a></h3>
+<ul class="simple">
+<li><p>terminal (o navegador Anaconda?). <a class="reference external" href="https://swcarpentry.github.io/shell-novice-es/">https://swcarpentry.github.io/shell-novice-es/</a> (y en Windows? Powershell?)</p></li>
+</ul>
+</section>
+</section>
+<section id="referencias">
+<h2>Referencias<a class="headerlink" href="#referencias" title="Enlazar permanentemente con este título">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -471,7 +692,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ic/aulainv/github"
+            path: "./ic/aulainv/jupyter"
         },
         predefinedOutput: true
     }
@@ -485,17 +706,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../python/Intro_to_plot.html" title="anterior página">
+    <a class='left-prev' id="prev-link" href="Jupyter.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Visualizar datos en Python</p>
+            <p class="prev-next-title">Introducción a Jupyter</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../jupyter/Jupyter.html" title="siguiente página">
+    <a class='right-next' id="next-link" href="instalacion-jlab-conda.html" title="siguiente página">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Introducción a Jupyter</p>
+        <p class="prev-next-title">Instalación de JupyterLab y Conda</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

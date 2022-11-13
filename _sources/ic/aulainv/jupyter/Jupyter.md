@@ -8,5 +8,5 @@ Jupyter es un entorno de trabajo que permite trabajar con diversos lenguajes de 
 
 ## Contenido
 
-- [Notas](Introduccion a Jupyter.html) - CREAR
-- [Cuadernos Jupyter](Introducing_Jupyter_Notebooks.ipynb) - TRADUCIR
+```{tableofcontents}
+```

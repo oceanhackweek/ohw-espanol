@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introducción a Github &#8212; OHW Español</title>
+    <title>Instalación de JupyterLab y Conda &#8212; OHW Español</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Introducción a Jupyter" href="../jupyter/Jupyter.html" />
-    <link rel="prev" title="Visualizar datos en Python" href="../python/Intro_to_plot.html" />
+    <link rel="next" title="Cuadernos Jupyter" href="Introducing_Jupyter_Notebooks.html" />
+    <link rel="prev" title="Curso de introducción a Jupyter para principiantes" href="jupyter-tutorial.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="es">
     
@@ -186,33 +186,33 @@ const thebe_selector_output = ".output, .cell_output"
        </li>
       </ul>
      </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../github/Github.html">
        Git y GitHub
       </a>
      </li>
-     <li class="toctree-l3 has-children">
-      <a class="reference internal" href="../jupyter/Jupyter.html">
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="Jupyter.html">
        Jupyter
       </a>
-      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
       <label for="toctree-checkbox-5">
        <i class="fas fa-chevron-down">
        </i>
       </label>
-      <ul>
+      <ul class="current">
        <li class="toctree-l4">
-        <a class="reference internal" href="../jupyter/jupyter-tutorial.html">
+        <a class="reference internal" href="jupyter-tutorial.html">
          Curso de introducción a Jupyter para principiantes
         </a>
        </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../jupyter/instalacion-jlab-conda.html">
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
          Instalación de JupyterLab y Conda
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../jupyter/Introducing_Jupyter_Notebooks.html">
+        <a class="reference internal" href="Introducing_Jupyter_Notebooks.html">
          Cuadernos Jupyter
         </a>
        </li>
@@ -346,7 +346,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/oceanhackweek/ohw-espanol/issues/new?title=Issue%20on%20page%20%2Fic/aulainv/github/Github.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/oceanhackweek/ohw-espanol/issues/new?title=Issue%20on%20page%20%2Fic/aulainv/jupyter/instalacion-jlab-conda.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -363,7 +363,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/oceanhackweek/ohw-espanol/edit/main/sitio/ic/aulainv/github/Github.md"
+        <a href="https://github.com/oceanhackweek/ohw-espanol/edit/main/sitio/ic/aulainv/jupyter/instalacion-jlab-conda.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -391,7 +391,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../../_sources/ic/aulainv/github/Github.md"
+        <a href="../../../_sources/ic/aulainv/jupyter/instalacion-jlab-conda.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -428,23 +428,104 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalar-miniconda">
+   Instalar Miniconda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows">
+     Windows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#macos-o-linux">
+     macOS o Linux
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crear-entorno-conda-para-jupyterlab">
+   Crear entorno conda para JupyterLab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introducción a Github</h1>
+                <h1>Instalación de JupyterLab y Conda</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalar-miniconda">
+   Instalar Miniconda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#windows">
+     Windows
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#macos-o-linux">
+     macOS o Linux
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crear-entorno-conda-para-jupyterlab">
+   Crear entorno conda para JupyterLab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias">
+   Referencias
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -452,10 +533,53 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-github">
-<h1>Introducción a Github<a class="headerlink" href="#introduccion-a-github" title="Enlazar permanentemente con este título">#</a></h1>
-<p><strong>Autora</strong>: Denisse Fierro Arcos</p>
-<p>Tutorial de iniciación a Github, en español</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-jupyterlab-y-conda">
+<h1>Instalación de JupyterLab y Conda<a class="headerlink" href="#instalacion-de-jupyterlab-y-conda" title="Enlazar permanentemente con este título">#</a></h1>
+<p>Instalaremos la aplicación <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> en tu computadora, utilizando el sistema <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p>
+<p><a class="reference external" href="https://docs.conda.io">Conda</a> es un administrador de paquetes y entornos para cualquier lenguaje de programación, pero especialmente popular en la comunidad de usuarios de Python. Permite la instalación de múltiples versiones de paquetes de software o librerías y de sus dependencias en diferentes entornos, con la capacidad de cambiar fácilmente de un entorno a otro. Puede ser instalado en tu computadora sin necesidad de tener privilegios administrativos.</p>
+<p>Conda funciona tanto en Windows como en macOS y Linux. Conda y los paquetes disponibles a través de conda son gratuitos y bajo licencias de código abierto. Hay diferentes maneras de instalar conda. Aquí utilizaremos <a class="reference external" href="https://conda.io/miniconda.html">Miniconda</a>, una distribución ligera de conda.</p>
+<p>En <a class="reference external" href="https://rafneta.github.io/CienciaDatosPythonCIDE/Laboratorios/Lab1/instalacion.html">este sitio en español (CIDE, Centro de Investigación y Docencias Economicas, A.C., México)</a> puedes encontrar más información sobre el uso de conda. <a class="reference external" href="https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/">Este excelente tutorial</a> de <a class="reference external" href="https://carpentries.org">The Carpentries</a> contiene información aún más extensa sobre conda, en inglés.</p>
+<section id="instalar-miniconda">
+<h2>Instalar Miniconda<a class="headerlink" href="#instalar-miniconda" title="Enlazar permanentemente con este título">#</a></h2>
+<p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">Esta página</a> contiene instrucciones detalladas de instalación, en inglés. Aquí incluimos instrucciones breves. Para más información sobre el uso de la <strong>terminal</strong> (<em>shell</em>) en macOS y Linux, te recomendamos el tutorial <a class="reference external" href="https://swcarpentry.github.io/shell-novice-es/">La Terminal de Unix</a>, de The Carpentries. La terminal PowerShell en Windows se comporta de manera similar.</p>
+<section id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Enlazar permanentemente con este título">#</a></h3>
+<p>En la página <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a>, bajo «Latest Miniconda Installer Links», baja el instalador <code class="docutils literal notranslate"><span class="pre">Miniconda3</span> <span class="pre">Windows</span> <span class="pre">64bit</span></code>. Si tu computadora es vieja, tal vez la versión 32bit es la indicada. En Windows 10:</p>
+<ul class="simple">
+<li><p>Haz doble clic en el archivo instalador después de bajarlo.</p></li>
+<li><p>Selecciona la opción para instalar como usuario local solamente (local user only).</p></li>
+<li><p>Acepta la ruta (<em>path</em>) de archivos de instalación de defecto, que probablemente será: <code class="docutils literal notranslate"><span class="pre">C:\Users\MIPERFIL\miniconda3</span></code></p></li>
+<li><p>En la ventana «Advanced Installation Options», remueve la selección de ambas cajas («Add Miniconda3 …» y «Register Miniconda3 …»)</p></li>
+<li><p>En la ventana «Completing Miniconda3», remueve la selección de ambas cajas.</p></li>
+</ul>
+<p>Cuando la instalación ha concluído, abre el «Anaconda Powershell Prompt» desde el menú de Start. Puedes comprobar que funciona bien corriendo el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code>.</p>
+<p><strong>TODO: Recomendacion de enlace para aprender mas sobre uso de la terminal.</strong></p>
+</section>
+<section id="macos-o-linux">
+<h3>macOS o Linux<a class="headerlink" href="#macos-o-linux" title="Enlazar permanentemente con este título">#</a></h3>
+<p>En la terminal (bash):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># En macOS</span>
+<span class="nv">url</span><span class="o">=</span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+<span class="c1"># En Linux</span>
+<span class="nv">url</span><span class="o">=</span>https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+wget <span class="nv">$url</span> -O miniconda.sh
+bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda3
+</pre></div>
+</div>
+<p>El instalador te preguntará si quieres que inicialize Miniconda3 corriendo <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> («Do you wish the installer to initialize Miniconda3 by running conda init?»). Selecciona «yes». Por último, corre el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">--yes</span></code>.</p>
+</section>
+</section>
+<section id="crear-entorno-conda-para-jupyterlab">
+<h2>Crear entorno conda para JupyterLab<a class="headerlink" href="#crear-entorno-conda-para-jupyterlab" title="Enlazar permanentemente con este título">#</a></h2>
+<p>Con conda ya instalado, el último paso es crear un entorno de conda que usaremos para correr la aplicación JupyterLab. Además de JupyterLab, este entorno incluirá Python 3.10 y dos paquetes de Python de uso amplio, <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> y <code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code>.</p>
+<p>En la terminal donde instalaste miniconnda, corre este comando de <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> para crear el entorno: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--yes</span> <span class="pre">-n</span> <span class="pre">jupyterlab</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">python=3.10</span> <span class="pre">jupyterlab</span> <span class="pre">jupyterlab-language-pack-es-ES</span> <span class="pre">nb_conda_kernels</span> <span class="pre">pandas</span> <span class="pre">matplotlib-base</span></code></p>
+<p>Este entorno contiene un «paquete de idioma» (<em>language pack</em>) de español que permitirá cambiar el interfaz de JupyterLab al español.</p>
+</section>
+<section id="referencias">
+<h2>Referencias<a class="headerlink" href="#referencias" title="Enlazar permanentemente con este título">#</a></h2>
+<p>Además de información derivada de los enlaces externos ya presentados, esta página contiene algunos materiales del tutorial <a class="reference external" href="https://datacarpentry.org/python-ecology-lesson-es/index.html">Análisis y visualización de datos usando Python</a>, de The Carpentries.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -471,7 +595,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ic/aulainv/github"
+            path: "./ic/aulainv/jupyter"
         },
         predefinedOutput: true
     }
@@ -485,17 +609,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../python/Intro_to_plot.html" title="anterior página">
+    <a class='left-prev' id="prev-link" href="jupyter-tutorial.html" title="anterior página">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Visualizar datos en Python</p>
+            <p class="prev-next-title">Curso de introducción a Jupyter para principiantes</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../jupyter/Jupyter.html" title="siguiente página">
+    <a class='right-next' id="next-link" href="Introducing_Jupyter_Notebooks.html" title="siguiente página">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Introducción a Jupyter</p>
+        <p class="prev-next-title">Cuadernos Jupyter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
