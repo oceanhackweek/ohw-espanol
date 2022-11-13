@@ -553,7 +553,6 @@ title="Print to PDF"
 <li><p>En la ventana «Completing Miniconda3», remueve la selección de ambas cajas.</p></li>
 </ul>
 <p>Cuando la instalación ha concluído, abre el «Anaconda Powershell Prompt» desde el menú de Start. Puedes comprobar que funciona bien corriendo el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code>.</p>
-<p><strong>TODO: Recomendacion de enlace para aprender mas sobre uso de la terminal.</strong></p>
 </section>
 <section id="macos-o-linux">
 <h3>macOS o Linux<a class="headerlink" href="#macos-o-linux" title="Enlazar permanentemente con este título">#</a></h3>
@@ -567,7 +566,7 @@ wget <span class="nv">$url</span> -O miniconda.sh
 bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda3
 </pre></div>
 </div>
-<p>El instalador te preguntará si quieres que inicialize Miniconda3 corriendo <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> («Do you wish the installer to initialize Miniconda3 by running conda init?»). Selecciona «yes». Por último, corre el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">--yes</span></code>.</p>
+<p>Si el instalador te pregunta si quieres que inicialize Miniconda3 corriendo <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> («Do you wish the installer to initialize Miniconda3 by running conda init?»), selecciona «yes». Si no, corre el siguiente comando: <code class="docutils literal notranslate"><span class="pre">./miniconda3/bin/conda</span> <span class="pre">init</span></code>. Por último, corre el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">--yes</span></code></p>
 </section>
 </section>
 <section id="crear-entorno-conda-para-jupyterlab">
