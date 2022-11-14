@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Cuadernos Jupyter" href="Introducing_Jupyter_Notebooks.html" />
-    <link rel="prev" title="Curso de introducción a Jupyter para principiantes" href="jupyter-tutorial.html" />
+    <link rel="next" title="Demostración del cuaderno (notebook) Jupyter" href="cuadernos-jupyter-demo.html" />
+    <link rel="prev" title="Introducción a Jupyter" href="jupyter-tutorial.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="es">
     
@@ -203,7 +203,7 @@ const thebe_selector_output = ".output, .cell_output"
       <ul class="current">
        <li class="toctree-l4">
         <a class="reference internal" href="jupyter-tutorial.html">
-         Curso de introducción a Jupyter para principiantes
+         Introducción a Jupyter
         </a>
        </li>
        <li class="toctree-l4 current active">
@@ -212,8 +212,12 @@ const thebe_selector_output = ".output, .cell_output"
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="Introducing_Jupyter_Notebooks.html">
-         Cuadernos Jupyter
+        <a class="reference internal" href="cuadernos-jupyter-demo.html">
+         Demostración del cuaderno (
+         <em>
+          notebook
+         </em>
+         ) Jupyter
         </a>
        </li>
       </ul>
@@ -473,9 +477,16 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#referencias">
-   Referencias
+  <a class="reference internal nav-link" href="#referencias-y-recursos">
+   Referencias y recursos
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#en-ingles">
+     En inglés
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -519,9 +530,16 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#referencias">
-   Referencias
+  <a class="reference internal nav-link" href="#referencias-y-recursos">
+   Referencias y recursos
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#en-ingles">
+     En inglés
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -538,10 +556,9 @@ title="Print to PDF"
 <p>Instalaremos la aplicación <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> en tu computadora, utilizando el sistema <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p>
 <p><a class="reference external" href="https://docs.conda.io">Conda</a> es un administrador de paquetes y entornos para cualquier lenguaje de programación, pero especialmente popular en la comunidad de usuarios de Python. Permite la instalación de múltiples versiones de paquetes de software o librerías y de sus dependencias en diferentes entornos, con la capacidad de cambiar fácilmente de un entorno a otro. Puede ser instalado en tu computadora sin necesidad de tener privilegios administrativos.</p>
 <p>Conda funciona tanto en Windows como en macOS y Linux. Conda y los paquetes disponibles a través de conda son gratuitos y bajo licencias de código abierto. Hay diferentes maneras de instalar conda. Aquí utilizaremos <a class="reference external" href="https://conda.io/miniconda.html">Miniconda</a>, una distribución ligera de conda.</p>
-<p>En <a class="reference external" href="https://rafneta.github.io/CienciaDatosPythonCIDE/Laboratorios/Lab1/instalacion.html">este sitio en español (CIDE, Centro de Investigación y Docencias Economicas, A.C., México)</a> puedes encontrar más información sobre el uso de conda. <a class="reference external" href="https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/">Este excelente tutorial</a> de <a class="reference external" href="https://carpentries.org">The Carpentries</a> contiene información aún más extensa sobre conda, en inglés.</p>
 <section id="instalar-miniconda">
 <h2>Instalar Miniconda<a class="headerlink" href="#instalar-miniconda" title="Enlazar permanentemente con este título">#</a></h2>
-<p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">Esta página</a> contiene instrucciones detalladas de instalación, en inglés. Aquí incluimos instrucciones breves. Para más información sobre el uso de la <strong>terminal</strong> (<em>shell</em>) en macOS y Linux, te recomendamos el tutorial <a class="reference external" href="https://swcarpentry.github.io/shell-novice-es/">La Terminal de Unix</a>, de The Carpentries. La terminal PowerShell en Windows se comporta de manera similar.</p>
+<p>Incluimos instrucciones breves para instalar Miniconda.</p>
 <section id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Enlazar permanentemente con este título">#</a></h3>
 <p>En la página <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a>, bajo «Latest Miniconda Installer Links», baja el instalador <code class="docutils literal notranslate"><span class="pre">Miniconda3</span> <span class="pre">Windows</span> <span class="pre">64bit</span></code>. Si tu computadora es vieja, tal vez la versión 32bit es la indicada. En Windows 10:</p>
@@ -556,7 +573,7 @@ title="Print to PDF"
 </section>
 <section id="macos-o-linux">
 <h3>macOS o Linux<a class="headerlink" href="#macos-o-linux" title="Enlazar permanentemente con este título">#</a></h3>
-<p>En la terminal (bash):</p>
+<p>En la <strong>terminal</strong> (<em>shell</em>, generalmente la terminal tipo «bash»):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># En macOS</span>
 <span class="nv">url</span><span class="o">=</span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 <span class="c1"># En Linux</span>
@@ -566,7 +583,7 @@ wget <span class="nv">$url</span> -O miniconda.sh
 bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda3
 </pre></div>
 </div>
-<p>Si el instalador te pregunta si quieres que inicialize Miniconda3 corriendo <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> («Do you wish the installer to initialize Miniconda3 by running conda init?»), selecciona «yes». Si no, corre el siguiente comando: <code class="docutils literal notranslate"><span class="pre">./miniconda3/bin/conda</span> <span class="pre">init</span></code>. Por último, corre el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">--yes</span></code></p>
+<p>Si el instalador te pregunta si quieres que inicialize Miniconda3 corriendo <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span></code> («Do you wish the installer to initialize Miniconda3 by running conda init?»), selecciona «yes». Si concluye sin hacer esa pregunta, ejecuta el siguiente comando: <code class="docutils literal notranslate"><span class="pre">./miniconda3/bin/conda</span> <span class="pre">init</span></code>. Por último, ejecuta el comando <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">--yes</span></code></p>
 </section>
 </section>
 <section id="crear-entorno-conda-para-jupyterlab">
@@ -575,9 +592,21 @@ bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda3
 <p>En la terminal donde instalaste miniconnda, corre este comando de <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> para crear el entorno: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--yes</span> <span class="pre">-n</span> <span class="pre">jupyterlab</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">python=3.10</span> <span class="pre">jupyterlab</span> <span class="pre">jupyterlab-language-pack-es-ES</span> <span class="pre">nb_conda_kernels</span> <span class="pre">pandas</span> <span class="pre">matplotlib-base</span></code></p>
 <p>Este entorno contiene un «paquete de idioma» (<em>language pack</em>) de español que permitirá cambiar el interfaz de JupyterLab al español.</p>
 </section>
-<section id="referencias">
-<h2>Referencias<a class="headerlink" href="#referencias" title="Enlazar permanentemente con este título">#</a></h2>
-<p>Además de información derivada de los enlaces externos ya presentados, esta página contiene algunos materiales del tutorial <a class="reference external" href="https://datacarpentry.org/python-ecology-lesson-es/index.html">Análisis y visualización de datos usando Python</a>, de The Carpentries.</p>
+<section id="referencias-y-recursos">
+<h2>Referencias y recursos<a class="headerlink" href="#referencias-y-recursos" title="Enlazar permanentemente con este título">#</a></h2>
+<ul class="simple">
+<li><p>En <a class="reference external" href="https://rafneta.github.io/CienciaDatosPythonCIDE/Laboratorios/Lab1/instalacion.html">este sitio (CIDE, Centro de Investigación y Docencias Economicas, A.C., México)</a> puedes encontrar más información sobre el uso de conda.</p></li>
+<li><p>Para más información sobre el uso de la <strong>terminal</strong> (<em>shell</em>) en macOS y Linux, te recomendamos el tutorial <a class="reference external" href="https://swcarpentry.github.io/shell-novice-es/">La Terminal de Unix</a>, de The Carpentries. La terminal PowerShell en Windows se comporta de manera similar.</p></li>
+<li><p>Además de información derivada de los enlaces externos ya presentados, esta página contiene algunos materiales del tutorial <a class="reference external" href="https://datacarpentry.org/python-ecology-lesson-es/index.html">Análisis y visualización de datos usando Python</a>, de <a class="reference external" href="https://carpentries.org">The Carpentries</a>.</p></li>
+</ul>
+<section id="en-ingles">
+<h3>En inglés<a class="headerlink" href="#en-ingles" title="Enlazar permanentemente con este título">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">Esta página</a> contiene instrucciones detalladas de instalación de Miniconda.</p></li>
+<li><p><a class="reference external" href="https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/">Este excelente tutorial</a> de <a class="reference external" href="https://carpentries.org">The Carpentries</a> contiene información aún más extensa sobre conda.</p></li>
+<li><p><a class="reference external" href="https://foundations.projectpythia.org/foundations/conda.html">Breve reseña</a> sobre el uso de conda para gestionar entornos de Python, de <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>.</p></li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -612,13 +641,13 @@ bash miniconda.sh -b -p <span class="nv">$HOME</span>/miniconda3
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">anterior</p>
-            <p class="prev-next-title">Curso de introducción a Jupyter para principiantes</p>
+            <p class="prev-next-title">Introducción a Jupyter</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Introducing_Jupyter_Notebooks.html" title="siguiente página">
+    <a class='right-next' id="next-link" href="cuadernos-jupyter-demo.html" title="siguiente página">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Cuadernos Jupyter</p>
+        <p class="prev-next-title">Demostración del cuaderno (<em>notebook</em>) Jupyter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

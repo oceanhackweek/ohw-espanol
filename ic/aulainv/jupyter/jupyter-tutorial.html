@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Curso de introducción a Jupyter para principiantes &#8212; OHW Español</title>
+    <title>Introducción a Jupyter &#8212; OHW Español</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -203,7 +203,7 @@ const thebe_selector_output = ".output, .cell_output"
       <ul class="current">
        <li class="toctree-l4 current active">
         <a class="current reference internal" href="#">
-         Curso de introducción a Jupyter para principiantes
+         Introducción a Jupyter
         </a>
        </li>
        <li class="toctree-l4">
@@ -212,8 +212,12 @@ const thebe_selector_output = ".output, .cell_output"
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="Introducing_Jupyter_Notebooks.html">
-         Cuadernos Jupyter
+        <a class="reference internal" href="cuadernos-jupyter-demo.html">
+         Demostración del cuaderno (
+         <em>
+          notebook
+         </em>
+         ) Jupyter
         </a>
        </li>
       </ul>
@@ -499,21 +503,40 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#abre-un-jupyter-notebook">
-     Abre un Jupyter Notebook
+    <a class="reference internal nav-link" href="#celdas">
+     Celdas
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#celdas-markdown">
+       Celdas Markdown
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#otros-apuntes-de-esta-seccion">
-     otros apuntes de esta seccion
+    <a class="reference internal nav-link" href="#barra-de-herramientas-de-un-cuaderno">
+     Barra de herramientas de un cuaderno
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#referencias">
-   Referencias
+  <a class="reference internal nav-link" href="#trucos-utiles">
+   Trucos útiles
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias-y-recursos">
+   Referencias y recursos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#en-ingles">
+     En inglés
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -524,7 +547,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Curso de introducción a Jupyter para principiantes</h1>
+                <h1>Introducción a Jupyter</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -583,21 +606,40 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#abre-un-jupyter-notebook">
-     Abre un Jupyter Notebook
+    <a class="reference internal nav-link" href="#celdas">
+     Celdas
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#celdas-markdown">
+       Celdas Markdown
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#otros-apuntes-de-esta-seccion">
-     otros apuntes de esta seccion
+    <a class="reference internal nav-link" href="#barra-de-herramientas-de-un-cuaderno">
+     Barra de herramientas de un cuaderno
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#referencias">
-   Referencias
+  <a class="reference internal nav-link" href="#trucos-utiles">
+   Trucos útiles
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#referencias-y-recursos">
+   Referencias y recursos
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#en-ingles">
+     En inglés
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -609,13 +651,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="curso-de-introduccion-a-jupyter-para-principiantes">
-<h1>Curso de introducción a Jupyter para principiantes<a class="headerlink" href="#curso-de-introduccion-a-jupyter-para-principiantes" title="Enlazar permanentemente con este título">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduccion-a-jupyter">
+<h1>Introducción a Jupyter<a class="headerlink" href="#introduccion-a-jupyter" title="Enlazar permanentemente con este título">#</a></h1>
 <section id="que-es-jupyter">
 <h2>¿Qué es Jupyter?<a class="headerlink" href="#que-es-jupyter" title="Enlazar permanentemente con este título">#</a></h2>
 <p><a class="reference external" href="https://es.wikipedia.org/wiki/Proyecto_Jupyter">Jupyter</a> es un ecosistema abierto (<em>open source</em>) de computación desarrollado por el <a class="reference external" href="https://jupyter.org/">Proyecto Jupyter</a> que incluye herramientas para el desarrollo, intercambio y presentación interactiva de código y proyectos de análisis de datos, con apoyo para una gran cantidad de lenguajes de programación (su nombre se deriva de los lenguajes de código abierto Julia, Python y R).</p>
-<p>El ecosistema del Proyecto Jupyter está <a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/why-we-use-jupyter-notebooks.html#but-first-what-is-jupyter-notebook">compuesto de tres elementos</a>: una colección de estándares, una comunidad y una serie de herramientas de software. <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> es una aplicación para crear, manejar y correr cuadernos (<em>notebooks</em>) Jupyter. Un <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/latest/">cuaderno Jupyter</a> es un documento que permite mezclar código ejecutable, ecuaciones, visualizaciones y texto narrativo formateado. Un cuaderno puede combinar en un sólo documento el código, los datos que utiliza y sus resultados, incluyendo explicaciones, gráficas y contenido multimedia, de tal modo que pueda ser compartido ampliamente y corrido por otros con relativa facilidad. El cuaderno permite la creación de narrativas computacionales interactivas y reproducibles.</p>
-<p>El ecosistema Jupyter utiliza tecnología web que permite correr las apliaciones en un navegador (<em>browser</em>) con las computaciones ya sea en tu propia computadora («local») o a través de servicios o servidores remotos. Los cuadernos Jupyter y el ecosistema Jupyter hoy en día gozan de una gran popularidad en aplicaciones de ciencias de datos y aplicaciones científicas en general, especialmente con el lenguaje Python.</p>
+<p>El ecosistema del Proyecto Jupyter está <a class="reference external" href="https://jupyter4edu.github.io/jupyter-edu-book/why-we-use-jupyter-notebooks.html#but-first-what-is-jupyter-notebook">compuesto de tres elementos</a>: una colección de estándares, una comunidad y una serie de herramientas de software. <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> es una aplicación para crear, manejar y correr cuadernos (<em>notebooks</em>) Jupyter. Un <a class="reference external" href="https://es.wikipedia.org/wiki/Proyecto_Jupyter#Jupyter_Notebook">cuaderno Jupyter</a> es un documento que permite mezclar código ejecutable, ecuaciones, visualizaciones y texto narrativo formateado. Un cuaderno puede combinar en un sólo documento el código, los datos que utiliza y sus resultados, incluyendo explicaciones, gráficas y contenido multimedia, de tal modo que pueda ser compartido ampliamente y corrido por otros con relativa facilidad. El cuaderno permite la creación de narrativas computacionales interactivas y reproducibles.</p>
+<p>El ecosistema Jupyter utiliza tecnología web que permite correr las apliaciones en un navegador (<em>browser</em>) web con las computaciones ya sea en tu propia computadora («local») o a través de servicios o servidores remotos, incluyendo en la nube. Los cuadernos Jupyter y el ecosistema Jupyter hoy en día gozan de una gran popularidad en aplicaciones de ciencias de datos y aplicaciones científicas en general, especialmente con el lenguaje Python.</p>
 </section>
 <section id="jupyterlab-instalacion-y-lanzamiento">
 <h2>JupyterLab: Instalación y lanzamiento<a class="headerlink" href="#jupyterlab-instalacion-y-lanzamiento" title="Enlazar permanentemente con este título">#</a></h2>
@@ -634,7 +676,7 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter lab
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> se abrirá automáticamente en tu navegador de defecto. Si no es así, o si deseas utilizar un navegador diferente, abre este enlace local: <a class="reference external" href="http://localhost:8888/lab">http://localhost:8888/lab</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code> se abrirá automáticamente en tu navegador de defecto. Si no es así, o si deseas utilizar un navegador diferente, abre este enlace local: <code class="docutils literal notranslate"><span class="pre">http://localhost:8888/lab</span></code></p>
 </section>
 </section>
 <section id="interfaz-de-jupyterlab">
@@ -645,31 +687,70 @@ title="Print to PDF"
 <p><img alt="Cambiar idioma a español" src="../../../_images/JupyterLab-CambiarIdiomaAEspanol.png" /></p>
 <p>Se abrirá una ventana de confirmación del cambio:</p>
 <p><img alt="Confirmar cambio de idioma" src="../../../_images/JupyterLab-CambiarIdioma-Confirmar.png" /></p>
-<p>Al confirmarlo presionando <code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">and</span> <span class="pre">reload</span></code>, el navegador se refrescará y verás el interfaz traducido al español.</p>
+<p>Al confirmarlo presionando <code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">and</span> <span class="pre">reload</span></code>, el navegador se refrescará y verás el interfaz traducido al español. Ojo: ¡la traducción no es 100% completa!</p>
 </section>
 <section id="tour-del-interfaz">
 <h3>Tour del interfaz<a class="headerlink" href="#tour-del-interfaz" title="Enlazar permanentemente con este título">#</a></h3>
 <p>Aunque JupyterLab tiene muchas características de un Entorno de Desarrollo Integrado (<em>IDE</em>) tradicional, su enfoque es en proveer una experiencia computacional interactiva y exploratoria.</p>
 <p><img alt="Interfaz de entrada, JupyterLab" src="../../../_images/JupyterLab-Nuevo-Enblanco.png" /></p>
-<p>El interfaz de JupyterLab consiste de un <strong>área principal de trabajo</strong> que contiene pestañas (<em>tabs</em>) de documentos y herramientas, una <strong>barra lateral izquierda</strong>, y una <strong>barra de menú</strong>. La barra lateral izquierda contiene el <strong>navegador de archivos</strong>, la lista de <strong>núcleos (<em>kernels</em>), terminales y pestañas (<em>tabs</em>) activas</strong>, la <strong>tabla de contenido</strong> para el documento activo, y el <strong>administrador de extensiones</strong>. En el área de trabajo pueden existir varios documentos o componentes abiertos en diferentes pestañas. Estos pueden incluir cuadernos, consolas de Python (similar a una terminal), terminales, y documentos de multimedia. El <strong>lanzador</strong> permite lanzar cuadernos nuevos (seleccionando el núcleo deseado), consolas, terminales, y otros tipos de archivos o herramientas. El menú <code class="docutils literal notranslate"><span class="pre">Ver</span> <span class="pre">&gt;</span> <span class="pre">Activar</span> <span class="pre">paleta</span> <span class="pre">de</span> <span class="pre">comandos</span></code> da acceso a la <strong>paleta de comandos</strong>.</p>
+<p>El interfaz de JupyterLab consiste de un <strong>área principal de trabajo</strong> que contiene pestañas (<em>tabs</em>) de documentos y herramientas, una <strong>barra lateral izquierda</strong>, una <strong>barra de menú</strong>, y una <strong>barra de información</strong> en la parter inferior. La barra lateral izquierda contiene el <strong>navegador de archivos</strong>, la lista de <strong>núcleos (<em>kernels</em>), terminales y pestañas (<em>tabs</em>) activas</strong>, la <strong>tabla de contenido</strong> para el documento activo, y el <strong>administrador de extensiones</strong>. En el área de trabajo pueden existir varios documentos o componentes abiertos en diferentes pestañas. Estos pueden incluir cuadernos, consolas de Python (similar a una terminal), terminales, y documentos de multimedia. El <strong>lanzador</strong> permite lanzar cuadernos nuevos (seleccionando el núcleo deseado), consolas, terminales, y otros tipos de archivos o herramientas. El menú <code class="docutils literal notranslate"><span class="pre">Ver</span> <span class="pre">&gt;</span> <span class="pre">Activar</span> <span class="pre">paleta</span> <span class="pre">de</span> <span class="pre">comandos</span></code> da acceso a la <strong>paleta de comandos</strong>.</p>
 <p>La documentación de JupyterLab contiene <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/user/interface.html">más detalles sobre el interfaz</a>, en inglés.</p>
 </section>
 </section>
 <section id="cuadernos-notebooks-jupyter">
 <h2>Cuadernos (<em>notebooks</em>) Jupyter<a class="headerlink" href="#cuadernos-notebooks-jupyter" title="Enlazar permanentemente con este título">#</a></h2>
-<section id="abre-un-jupyter-notebook">
-<h3>Abre un Jupyter Notebook<a class="headerlink" href="#abre-un-jupyter-notebook" title="Enlazar permanentemente con este título">#</a></h3>
-<p>Para una breve introducción a <strong>Jupyter Notebooks</strong>, consulta nuestra página <a class="reference external" href="https://datacarpentry.org/python-ecology-lesson-es/jupyter_notebooks/index.html">“Introducción a Jupyter Notebooks”</a>.</p>
+<p><strong>El <a class="reference internal" href="cuadernos-jupyter-demo.html"><span class="doc std std-doc">Cuaderno Jupyter de demostración</span></a> muestra varios de los elementos y capacidades más importantes de los cuadernos Jupyter.</strong> Puedés bajar el archivo del cuaderno (documento <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) <a class="reference internal" href="cuadernos-jupyter-demo.html"><span class="doc std std-doc">aquí</span></a>, para ejecutarlo en tu computadora. Esta imagen muestra un avance del cuaderno:</p>
+<p><img alt="Cuaderno en JupyterLab" src="../../../_images/JupyterLab-cuaderno.png" /></p>
+<p>En JupyterLab puedes abrir un cuaderno ya existente desde el navegador de archivos, en la barra lateral. Para <strong>crear un cuaderno nuevo</strong>, presiona uno de los «núcleos» en el <strong>Lanzador</strong> listados en el área principal de trabajo, bajo «Cuaderno»:</p>
+<p><img alt="Crear un cuaderno" src="../../../_images/JupyterLab-CrearCuaderno.png" /></p>
+<section id="celdas">
+<h3>Celdas<a class="headerlink" href="#celdas" title="Enlazar permanentemente con este título">#</a></h3>
+<p>El componente principal de un cuaderno es la <strong>celda</strong> (<em>cell</em>). Hay dos tipos principales de celdas: <strong>celda de código</strong> y <strong>celda de Markdown</strong>. Para ambos tipos, <strong>al interactuar con celdas existen dos modos de ejecución</strong>: El modo <strong>edición</strong> permite modificar el contenido de las celdas, y el modo <strong>comando</strong> permite ejecutar celdas o modificar el documento. Para entrar al modo edición, presiona la tecla <code class="docutils literal notranslate"><span class="pre">Enter</span></code> o haz clic en una celda seleccionada. Para entrar al modo comando, presiona <code class="docutils literal notranslate"><span class="pre">Esc</span></code> o haz clic fuera de la celda que tengamos seleccionada. Una vez en el modo comando, podemos ejecutar la celda desde la barra de herramientas del cuaderno, presionando <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>, o desde el menú bajo «Run».</p>
+<p>La ejecución de celdas es lineal, de tal modo que el estado actual depende de secuencia exacta de celda de código que has ejecutado. En un cuaderno cuyas celdas han sido ejecutadas en orden estricto, de arriba a abajo, los números de las celdas irán en secuencia consecutiva.  Si has ejecutado las celdas fuera de orden, el estado puede ser confuso. <strong>Para evitar problemas, es importante correr un cuaderno completo, desde el principio (reiniciar y re-ejecutar) hasta el final, luego de haber explorado celdas fuera de secuencia</strong>.</p>
+<p>El código en una <strong>celda de código</strong> puede producir resultados visibles al ser ejecutado, que son mostrados debajo de la celda. Por ejemplo, esta celda produce una gráfica:</p>
+<p><img alt="celda de código" src="../../../_images/celdas-codigo.png" /></p>
+<section id="celdas-markdown">
+<h4>Celdas Markdown<a class="headerlink" href="#celdas-markdown" title="Enlazar permanentemente con este título">#</a></h4>
+<p>La celda de <a class="reference external" href="https://tutorialmarkdown.com/markdown">Markdown</a> permite escribir texto formateado o incluir enlaces, listas, encabezados de secciones, tablas, ecuaciones, imágenes u otro contenido multimedia. Markdown es un lenguage de marcado en texto plano fácil de aprender. Es como una versión mucho más sencilla de HTML. En Markdown agregas símbolos de su sintaxis para indicar el tipo de formateo o elementos a incluir. Por ejemplo, rodeando el texto con dos caracteres estrellas lo formatea en negrilla: <code class="docutils literal notranslate"><span class="pre">**negrilla**</span></code> produce <strong>negrilla</strong>. Símbolos numerales al comienza de una línea la convierten en encabezado: <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">encabazado</span> <span class="pre">de</span> <span class="pre">primer</span> <span class="pre">nivel</span></code>, <code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">encabazado</span> <span class="pre">de</span> <span class="pre">segundo</span> <span class="pre">nivel</span></code>, etc. Este es un ejemplo de una celda Markdown:</p>
+<p><img alt="celda de Markdown" src="../../../_images/celdas-markdown.png" /></p>
+<p>Pare aprender más sobre Markdown, <a class="reference external" href="https://datosgobar.github.io/portal-andino/markdown-guide/">aquí</a> puedes encontrar una guía breve pero completa. <a class="reference external" href="https://tutorialmarkdown.com/markdown">Este Tutorial Markdown</a> incluye más explicaciones y ejemplos. Ahí también econtrarás un <a class="reference external" href="https://editormarkdown.com/">editor en línea</a> donde puedes practicar escribir con códigos Markdown y ver los resultados inmediatamente.</p>
 </section>
-<section id="otros-apuntes-de-esta-seccion">
-<h3>otros apuntes de esta seccion<a class="headerlink" href="#otros-apuntes-de-esta-seccion" title="Enlazar permanentemente con este título">#</a></h3>
+</section>
+<section id="barra-de-herramientas-de-un-cuaderno">
+<h3>Barra de herramientas de un cuaderno<a class="headerlink" href="#barra-de-herramientas-de-un-cuaderno" title="Enlazar permanentemente con este título">#</a></h3>
+<p>Un cuaderno incluye una barra de herramientas. Aquí presentamos las principales herramientas. Estas herramientas también pueden ser ejecutadas desde el menú o a través de atajos de teclado.</p>
+<p>Herramientas para crear, copiar, o remover celdas:
+<img alt="cuaderno-BarraHerramientas-celdas" src="../../../_images/cuaderno-BarraHerramientas-celdas.png" /></p>
+<p>Herramientas para cambiar el «modo» de ejecución de la celda activa:
+<img alt="cuaderno-BarraHerramientas-modo" src="../../../_images/cuaderno-BarraHerramientas-modo.png" /></p>
+<p>Herramientas para ejecutar celdas o el cuaderno entero, o detener la ejecución:
+<img alt="cuaderno-BarraHerramientas-ejecucion" src="../../../_images/cuaderno-BarraHerramientas-ejecucion.png" /></p>
+</section>
+</section>
+<section id="trucos-utiles">
+<h2>Trucos útiles<a class="headerlink" href="#trucos-utiles" title="Enlazar permanentemente con este título">#</a></h2>
+<p>Para hacer el trabajo con un cuaderno Jupyter más eficiente, recomendamos explorar varios «trucos» o atajos comunes. Esto incluyen:</p>
 <ul class="simple">
-<li><p>terminal (o navegador Anaconda?). <a class="reference external" href="https://swcarpentry.github.io/shell-novice-es/">https://swcarpentry.github.io/shell-novice-es/</a> (y en Windows? Powershell?)</p></li>
+<li><p>Atajos de teclado</p></li>
+<li><p>Uso de autocompletado y descripción de funciones en ventanas desplegables</p></li>
+<li><p>«Comandos mágicos»</p></li>
+</ul>
+<p>El artículo <a class="reference external" href="https://elmundodelosdatos.com/5-trucos-para-jupyter-notebook/">5 trucos para Jupyter Notebook que no debes perderte</a> contiene una introducción excelente a estos y otros trucos! <a class="reference external" href="https://codigofacilito.com/articulos/comandos-ipython">Este otro artículo</a> profundiza más sobre los comandos mágicos (nota: <code class="docutils literal notranslate"><span class="pre">IPython</span></code> es una consola interactiva de Python que comparte la implementación de celdas y los comandos mágicos con los cuadernos Jupyter).</p>
+</section>
+<section id="referencias-y-recursos">
+<h2>Referencias y recursos<a class="headerlink" href="#referencias-y-recursos" title="Enlazar permanentemente con este título">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://facundoq.github.io/courses/images/res/02_python.html">Tutorial de Python con Jupyter Notebook</a>. Repasa Python en el contexto de un cuaderno Jupyter.</p></li>
+<li><p>Para una breve introducción a cuadernos Jupyter (aunque un poco vieja), consulta <a class="reference external" href="https://datacarpentry.org/python-ecology-lesson-es/jupyter_notebooks/index.html">“Introducción a Jupyter Notebooks”</a>, de <a class="reference external" href="https://carpentries.org">The Carpentries</a>.</p></li>
+<li><p>Para más información sobre el uso de la <strong>terminal</strong> (<em>shell</em>) en macOS y Linux, te recomendamos el tutorial <a class="reference external" href="https://swcarpentry.github.io/shell-novice-es/">La Terminal de Unix</a>, de <a class="reference external" href="https://carpentries.org">The Carpentries</a>. La terminal PowerShell en Windows se comporta de manera similar.</p></li>
+<li><p>Parte de este contenido está basado en el cuaderno <code class="docutils literal notranslate"><span class="pre">getting-started-guide_-_UW-JupyterHub-for-teaching.ipynb</span></code> del contenido de <a class="reference external" href="https://itconnect.uw.edu/tools-services-support/teaching-learning/jupyterhub-for-teaching/quickstart-tutorial/">«JupyterHub for Teaching» de la oficina IT, Universidad de Washington</a>.</p></li>
+</ul>
+<section id="en-ingles">
+<h3>En inglés<a class="headerlink" href="#en-ingles" title="Enlazar permanentemente con este título">#</a></h3>
+<ul class="simple">
+<li><p>Excelentes tutoriales sobre <a class="reference external" href="https://foundations.projectpythia.org/foundations/jupyterlab.html">JupyterLab</a> y <a class="reference external" href="https://foundations.projectpythia.org/foundations/jupyter.html">Python en Jupyter</a>, de <a class="reference external" href="https://projectpythia.org/">Project Pythia</a>.</p></li>
 </ul>
 </section>
-</section>
-<section id="referencias">
-<h2>Referencias<a class="headerlink" href="#referencias" title="Enlazar permanentemente con este título">#</a></h2>
 </section>
 </section>
 

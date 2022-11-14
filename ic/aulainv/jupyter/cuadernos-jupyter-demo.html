@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Cuadernos Jupyter &#8212; OHW Español</title>
+    <title>Demostración del cuaderno (notebook) Jupyter &#8212; OHW Español</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -205,7 +205,7 @@ const thebe_selector_output = ".output, .cell_output"
       <ul class="current">
        <li class="toctree-l4">
         <a class="reference internal" href="jupyter-tutorial.html">
-         Curso de introducción a Jupyter para principiantes
+         Introducción a Jupyter
         </a>
        </li>
        <li class="toctree-l4">
@@ -215,7 +215,11 @@ const thebe_selector_output = ".output, .cell_output"
        </li>
        <li class="toctree-l4 current active">
         <a class="current reference internal" href="#">
-         Cuadernos Jupyter
+         Demostración del cuaderno (
+         <em>
+          notebook
+         </em>
+         ) Jupyter
         </a>
        </li>
       </ul>
@@ -317,7 +321,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/oceanhackweek/ohw-espanol/main?urlpath=tree/sitio/ic/aulainv/jupyter/Introducing_Jupyter_Notebooks.ipynb"
+        <a href="https://mybinder.org/v2/gh/oceanhackweek/ohw-espanol/main?urlpath=tree/sitio/ic/aulainv/jupyter/cuadernos-jupyter-demo.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -377,7 +381,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/oceanhackweek/ohw-espanol/issues/new?title=Issue%20on%20page%20%2Fic/aulainv/jupyter/Introducing_Jupyter_Notebooks.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/oceanhackweek/ohw-espanol/issues/new?title=Issue%20on%20page%20%2Fic/aulainv/jupyter/cuadernos-jupyter-demo.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -394,7 +398,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/oceanhackweek/ohw-espanol/edit/main/sitio/ic/aulainv/jupyter/Introducing_Jupyter_Notebooks.ipynb"
+        <a href="https://github.com/oceanhackweek/ohw-espanol/edit/main/sitio/ic/aulainv/jupyter/cuadernos-jupyter-demo.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -422,7 +426,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../../_sources/ic/aulainv/jupyter/Introducing_Jupyter_Notebooks.ipynb"
+        <a href="../../../_sources/ic/aulainv/jupyter/cuadernos-jupyter-demo.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -482,29 +486,41 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cells">
-   Cells
+  <a class="reference internal nav-link" href="#importar-bibliotecas">
+   Importar bibliotecas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#annotating-mathematical-expressions">
-   Annotating mathematical expressions
+  <a class="reference internal nav-link" href="#definir-las-variables-x-e-y">
+   Definir las variables x e y
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-viz">
-   Data Viz
+  <a class="reference internal nav-link" href="#graficar-los-datos">
+   Graficar los datos
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#videos">
-   Videos
+  <a class="reference internal nav-link" href="#trucos-utiles">
+   Trucos útiles
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notebooks-in-oceanography">
-   Notebooks in Oceanography
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comandos-magicos">
+     Comandos mágicos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#autocompletacion">
+     Autocompletación
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descripcion-de-funciones-o-metodos">
+     Descripción de funciones o métodos
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -515,7 +531,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Cuadernos Jupyter</h1>
+                <h1>Demostración del cuaderno (notebook) Jupyter</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -526,29 +542,41 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cells">
-   Cells
+  <a class="reference internal nav-link" href="#importar-bibliotecas">
+   Importar bibliotecas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#annotating-mathematical-expressions">
-   Annotating mathematical expressions
+  <a class="reference internal nav-link" href="#definir-las-variables-x-e-y">
+   Definir las variables x e y
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-viz">
-   Data Viz
+  <a class="reference internal nav-link" href="#graficar-los-datos">
+   Graficar los datos
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#videos">
-   Videos
+  <a class="reference internal nav-link" href="#trucos-utiles">
+   Trucos útiles
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notebooks-in-oceanography">
-   Notebooks in Oceanography
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comandos-magicos">
+     Comandos mágicos
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#autocompletacion">
+     Autocompletación
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#descripcion-de-funciones-o-metodos">
+     Descripción de funciones o métodos
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -560,66 +588,159 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="cuadernos-jupyter">
-<h1>Cuadernos Jupyter<a class="headerlink" href="#cuadernos-jupyter" title="Enlazar permanentemente con este título">#</a></h1>
-<p>In this case, the notebook is a document format that contains both codes and text elements, figures, links, videos, equations, etc. As we can mix text and code in the same place, these documents are ideal places to generate and describe analyzes where both the formulation of the idea, the visualization of the result and the description of the result can be done in the same place.</p>
-<section id="cells">
-<h2>Cells<a class="headerlink" href="#cells" title="Enlazar permanentemente con este título">#</a></h2>
-<p>This is a text cell. Text cells accept Markdown format. Markdown is a very useful way of formating text, like adding <strong>bold</strong> and <em>italic</em> format. Check <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">this awesome cheat sheet</a> to learn more about it.</p>
-<p>In a code cell we can use Python as we used in any script:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="demostracion-del-cuaderno-notebook-jupyter">
+<h1>Demostración del cuaderno (<em>notebook</em>) Jupyter<a class="headerlink" href="#demostracion-del-cuaderno-notebook-jupyter" title="Enlazar permanentemente con este título">#</a></h1>
+<p>Esta breve demostración muestra varios de los elementos y capacidades más importantes de los cuadernos Jupyter.</p>
+<p>Para ayudar a navegar el cuaderno, este cuaderno divide el contenido (las celdas) en secciones por medio de encabezados en <strong>Markdown</strong>.</p>
+<section id="importar-bibliotecas">
+<h2>Importar bibliotecas<a class="headerlink" href="#importar-bibliotecas" title="Enlazar permanentemente con este título">#</a></h2>
+<p>Aquí importamos las bibliotecas o paquetes que usaremos en este cuadernos.</p>
+<p>Una celda de código puede incluir múltiples declaraciones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is a cell that contains code</span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 </div>
 </div>
 </div>
-<p>Each cell is an isolated environment that can be run separately. You can run each cell individually and in the sequence you want, but the variables it uses must be referenced before use.</p>
+</section>
+<section id="definir-las-variables-x-e-y">
+<h2>Definir las variables x e y<a class="headerlink" href="#definir-las-variables-x-e-y" title="Enlazar permanentemente con este título">#</a></h2>
+<p>Definimos las variables <code class="docutils literal notranslate"><span class="pre">x</span></code> e <code class="docutils literal notranslate"><span class="pre">y</span></code>, donde <code class="docutils literal notranslate"><span class="pre">y</span></code> es el <code class="docutils literal notranslate"><span class="pre">seno</span></code> de <code class="docutils literal notranslate"><span class="pre">x</span></code>. Podemos mostrar esta relación en Markdown usando la sintaxis de la <a class="reference external" href="https://es.wikipedia.org/wiki/MathJax">biblioteca MathJax</a>, que viene integrada en Jupyter:</p>
+<p><span class="math notranslate nohighlight">\(
+y = seno(x)
+\)</span></p>
+<p>Utilizaremos la biblioteca <code class="docutils literal notranslate"><span class="pre">numpy</span></code> de computación científica en <strong>arreglos</strong> (<em>arrays</em>) para definir las dos variables. Un arreglo numpy es similar a la lista normal de Python, pero almacena y opera con datos homogéneos, del mismo tipo.</p>
+<p>Las variables creadas en una celda quedan disponibles a las celdas siguientes.</p>
+<p>Aquí, <code class="docutils literal notranslate"><span class="pre">x</span></code> es creado como un rango entre 0 y 10, con paso (<em>step</em>) de 0.1.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="annotating-mathematical-expressions">
-<h2>Annotating mathematical expressions<a class="headerlink" href="#annotating-mathematical-expressions" title="Enlazar permanentemente con este título">#</a></h2>
-<p>It is also possible to use mathematical expressions along with the text. This is very useful when you have a mathematical explanation needed is going to be written as code. Writing is done in the same way as in <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX</a>:</p>
-<div class="math notranslate nohighlight">
-\[c = \sqrt{a^2 + b^2}\]</div>
-</section>
-<section id="data-viz">
-<h2>Data Viz<a class="headerlink" href="#data-viz" title="Enlazar permanentemente con este título">#</a></h2>
-<p>In the first cell, we put a <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> command, right? This is one of the «magics» available in Jupyter that allows the graphics of matplotlib to be presented inside the notebook itself, as we can see below:</p>
+<p>Podemos examinar los valores de estos arreglos fácilmente, ya sea con una declaración de la variable o utilizando la función <code class="docutils literal notranslate"><span class="pre">print</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1. , 1.1, 1.2,
+       1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2. , 2.1, 2.2, 2.3, 2.4, 2.5,
+       2.6, 2.7, 2.8, 2.9, 3. , 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8,
+       3.9, 4. , 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5. , 5.1,
+       5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6. , 6.1, 6.2, 6.3, 6.4,
+       6.5, 6.6, 6.7, 6.8, 6.9, 7. , 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7,
+       7.8, 7.9, 8. , 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 9. ,
+       9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9])
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="videos">
-<h2>Videos<a class="headerlink" href="#videos" title="Enlazar permanentemente con este título">#</a></h2>
-<p>We can also insert Youtube videos as part of the logical explanation sequence:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;qrSt5fTFxPk&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.         0.09983342 0.19866933]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Markdown permite crear y mostrar información en tablas. Este código Markdown con los primeros valores de nuestra ecuación:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>| x | seno(x) |
+|---|---|
+|0.0|0.0|
+|0.1|0.09983342|
+|0.2|0.19866933|
+|...|...|
+</pre></div>
+</div>
+<p>produce esta tabla formateada:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>x</p></th>
+<th class="text-align:left head"><p>seno(x)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>0.0</p></td>
+<td class="text-align:left"><p>0.0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>0.1</p></td>
+<td class="text-align:left"><p>0.09983342</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>0.2</p></td>
+<td class="text-align:left"><p>0.19866933</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>…</p></td>
+<td class="text-align:left"><p>…</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="graficar-los-datos">
+<h2>Graficar los datos<a class="headerlink" href="#graficar-los-datos" title="Enlazar permanentemente con este título">#</a></h2>
+<p>Finalmente, utilizamos la biblioteca <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> para gráficar los datos, personalizando el color, marcador, tamaño del marcador, y etiquetas de los ejes.</p>
+<p>La gráfica es presentada directamente en el cuaderno, como un resultado.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ángulo (radián)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;seno(x)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/cuadernos-jupyter-demo_13_0.png" src="../../../_images/cuadernos-jupyter-demo_13_0.png" />
+</div>
+</div>
+<p>Con Markdown podemos comparar ese gráfico a uno equivalente <a class="reference external" href="https://es.wikipedia.org/wiki/Seno_(trigonometr%C3%ADa)">tomado de Wikipedia</a>:</p>
+<p><img alt="grafica de seno, wikipedia" src="../../../_images/wikipedia-590px-Sine.svg.png" /></p>
+</section>
+<section id="trucos-utiles">
+<h2>Trucos útiles<a class="headerlink" href="#trucos-utiles" title="Enlazar permanentemente con este título">#</a></h2>
+<section id="comandos-magicos">
+<h3>Comandos mágicos<a class="headerlink" href="#comandos-magicos" title="Enlazar permanentemente con este título">#</a></h3>
+<p>Jupyter suministra unos comandos especiales llamados «comandos mágicos», ue consisten en funciones adicionales muy útiles para resolver necesidades comunes y repetitivas. Hay dos tipos de comandos mágicos: los comandos que comienzan con <code class="docutils literal notranslate"><span class="pre">%</span></code> que afectan a una única línea de una celda (donde se inserta el comando) y aquellos comandos que comienzan con <code class="docutils literal notranslate"><span class="pre">%%</span></code> y se aplican a toda la celda.</p>
+<p>Por ejemplo, el comando mágico <code class="docutils literal notranslate"><span class="pre">%whos</span></code> muestra todas las variables que han sido definidas en el cuaderno, junto con alguna información sobre ellas:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">whos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Variable   Type       Data/Info
+-------------------------------
+np         module     &lt;module &#39;numpy&#39; from &#39;/ho&lt;...&gt;kages/numpy/__init__.py&#39;&gt;
+plt        module     &lt;module &#39;matplotlib.pyplo&lt;...&gt;es/matplotlib/pyplot.py&#39;&gt;
+x          ndarray    100: 100 elems, type `float64`, 800 bytes
+y          ndarray    100: 100 elems, type `float64`, 800 bytes
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="notebooks-in-oceanography">
-<h2>Notebooks in Oceanography<a class="headerlink" href="#notebooks-in-oceanography" title="Enlazar permanentemente con este título">#</a></h2>
-<p><a class="reference external" href="https://lorenabarba.com/blog/cfd-python-12-steps-to-navier-stokes/">Twelve Steps to Navier-Stokes by Lorena Barba</a></p>
+<section id="autocompletacion">
+<h3>Autocompletación<a class="headerlink" href="#autocompletacion" title="Enlazar permanentemente con este título">#</a></h3>
+<p>Las funciones, objetos y variables que utilizamos comúnmente contienen muchos métodos o propiedades. El cuaderno Jupyter suministra un mecanismo de autocompletado, accedido presionando la tecla <code class="docutils literal notranslate"><span class="pre">Tab</span></code> luego del nombre de la variable u objecto (o después del <em>punto</em> que divide un objecto y sus métodos o propiedades). Esto nos mostrará un menú desplegable con todas las sugerencias, por ejemplo, para nuestra variable <code class="docutils literal notranslate"><span class="pre">x</span></code>:</p>
+<p><img alt="Muestra de autocompletacion" src="../../../_images/cuaderno-autocompletacion.png" /></p>
+</section>
+<section id="descripcion-de-funciones-o-metodos">
+<h3>Descripción de funciones o métodos<a class="headerlink" href="#descripcion-de-funciones-o-metodos" title="Enlazar permanentemente con este título">#</a></h3>
+<p>Similar al mecanismo de autocompletado, presionando la secuencia de teclas <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Tab</span></code> luego del nombre de una función o método nos revela su texto descriptivo en una ventana desplegable. Por ejemplo, para la función <code class="docutils literal notranslate"><span class="pre">np.sin</span></code> que hemos utilizado:</p>
+<p><img alt="Muestra de cadenas de docs" src="../../../_images/cuaderno-docstring.png" /></p>
+</section>
 </section>
 </section>
 
@@ -632,16 +753,16 @@ title="Print to PDF"
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "conda-env-jupyterlab-xx-py"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "conda-env-jupyterlab-xx-py",
             path: "./ic/aulainv/jupyter"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'conda-env-jupyterlab-xx-py'</script>
 
               </div>
               
