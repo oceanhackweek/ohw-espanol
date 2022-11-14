@@ -89,12 +89,15 @@ Pare aprender más sobre Markdown, [aquí](https://datosgobar.github.io/portal-a
 Un cuaderno incluye una barra de herramientas. Aquí presentamos las principales herramientas. Estas herramientas también pueden ser ejecutadas desde el menú o a través de atajos de teclado.
 
 Herramientas para crear, copiar, o remover celdas:
+
 ![cuaderno-BarraHerramientas-celdas](imagenes/cuaderno-BarraHerramientas-celdas.png)
 
-Herramientas para cambiar el "modo" de ejecución de la celda activa:
+Herramientas para cambiar el tipo de la celda activa, principalmente entre Código y Markdown (el tipo "Raw", crudo, es menos usado):
+
 ![cuaderno-BarraHerramientas-modo](imagenes/cuaderno-BarraHerramientas-modo.png)
 
 Herramientas para ejecutar celdas o el cuaderno entero, o detener la ejecución:
+
 ![cuaderno-BarraHerramientas-ejecucion](imagenes/cuaderno-BarraHerramientas-ejecucion.png)
 
 ## Trucos útiles
