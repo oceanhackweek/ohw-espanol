@@ -6,11 +6,9 @@ Instalaremos la aplicación `JupyterLab` en tu computadora, utilizando el sistem
 
 Conda funciona tanto en Windows como en macOS y Linux. Conda y los paquetes disponibles a través de conda son gratuitos y bajo licencias de código abierto. Hay diferentes maneras de instalar conda. Aquí utilizaremos [Miniconda](https://conda.io/miniconda.html), una distribución ligera de conda. 
 
-En [este sitio en español (CIDE, Centro de Investigación y Docencias Economicas, A.C., México)](https://rafneta.github.io/CienciaDatosPythonCIDE/Laboratorios/Lab1/instalacion.html) puedes encontrar más información sobre el uso de conda. [Este excelente tutorial](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/) de [The Carpentries](https://carpentries.org) contiene información aún más extensa sobre conda, en inglés.
-
 ## Instalar Miniconda
 
-[Esta página](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) contiene instrucciones detalladas de instalación, en inglés. Aquí incluimos instrucciones breves. Para más información sobre el uso de la **terminal** (*shell*) en macOS y Linux, te recomendamos el tutorial [La Terminal de Unix](https://swcarpentry.github.io/shell-novice-es/), de The Carpentries. La terminal PowerShell en Windows se comporta de manera similar.
+Incluimos instrucciones breves para instalar Miniconda.
 
 ### Windows
 
@@ -26,7 +24,7 @@ Cuando la instalación ha concluído, abre el "Anaconda Powershell Prompt" desde
 
 ### macOS o Linux
 
-En la terminal (bash):
+En la **terminal** (*shell*, generalmente la terminal tipo "bash"):
 
 ```bash
 # En macOS
@@ -38,7 +36,7 @@ wget $url -O miniconda.sh
 bash miniconda.sh -b -p $HOME/miniconda3
 ```
 
-Si el instalador te pregunta si quieres que inicialize Miniconda3 corriendo `conda init` ("Do you wish the installer to initialize Miniconda3 by running conda init?"), selecciona "yes". Si no, corre el siguiente comando: `./miniconda3/bin/conda init`. Por último, corre el comando `conda update conda --yes`
+Si el instalador te pregunta si quieres que inicialize Miniconda3 corriendo `conda init` ("Do you wish the installer to initialize Miniconda3 by running conda init?"), selecciona "yes". Si concluye sin hacer esa pregunta, ejecuta el siguiente comando: `./miniconda3/bin/conda init`. Por último, ejecuta el comando `conda update conda --yes`
 
 ## Crear entorno conda para JupyterLab
 
@@ -48,6 +46,14 @@ En la terminal donde instalaste miniconnda, corre este comando de `conda create`
 
 Este entorno contiene un "paquete de idioma" (*language pack*) de español que permitirá cambiar el interfaz de JupyterLab al español.
 
-## Referencias
+## Referencias y recursos
 
-Además de información derivada de los enlaces externos ya presentados, esta página contiene algunos materiales del tutorial [Análisis y visualización de datos usando Python](https://datacarpentry.org/python-ecology-lesson-es/index.html), de The Carpentries.
+- En [este sitio (CIDE, Centro de Investigación y Docencias Economicas, A.C., México)](https://rafneta.github.io/CienciaDatosPythonCIDE/Laboratorios/Lab1/instalacion.html) puedes encontrar más información sobre el uso de conda. 
+- Para más información sobre el uso de la **terminal** (*shell*) en macOS y Linux, te recomendamos el tutorial [La Terminal de Unix](https://swcarpentry.github.io/shell-novice-es/), de The Carpentries. La terminal PowerShell en Windows se comporta de manera similar.
+- Además de información derivada de los enlaces externos ya presentados, esta página contiene algunos materiales del tutorial [Análisis y visualización de datos usando Python](https://datacarpentry.org/python-ecology-lesson-es/index.html), de [The Carpentries](https://carpentries.org).
+
+### En inglés
+
+- [Esta página](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) contiene instrucciones detalladas de instalación de Miniconda.
+- [Este excelente tutorial](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/) de [The Carpentries](https://carpentries.org) contiene información aún más extensa sobre conda.
+- [Breve reseña](https://foundations.projectpythia.org/foundations/conda.html) sobre el uso de conda para gestionar entornos de Python, de [Project Pythia](https://projectpythia.org/).
